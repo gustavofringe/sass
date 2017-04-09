@@ -53,11 +53,6 @@ header {
   }
 
   nav {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
     ul {
       width: 180px;
       margin: 0 auto;
@@ -77,6 +72,7 @@ header {
     }
   }
 }
+
 /*
 *
 *
@@ -86,10 +82,45 @@ header {
 */
 .lorem_picture {
   .image_article {
-    width: 135px;
-    height: 90px;
-    content: url("../img/piscine2_s.jpg");
-    float: right;
+    display: none;
   }
 }
 
+
+/*
+*
+*
+*########################### form contact
+*
+*/
+.contact {
+  display: block;
+  input {
+    display: block;
+  }
+  fieldset {
+    border: 2px solid transparent;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+  }
+  .btn-primary{
+    margin-top: 10px;
+    width: 150px;
+    height: 35px;
+    background-color: #2962FF;
+    border-style: none;
+    border-radius: 3px;
+  }
+}
+/*
+*
+*
+*###################################" map
+*
+*/
+
+#map {
+  height: 400px;
+  width: 320px;
+}
