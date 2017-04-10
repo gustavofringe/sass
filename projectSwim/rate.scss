@@ -1,0 +1,327 @@
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  margin: 0;
+}
+
+/*
+*
+*#########################header
+*
+*
+*/
+.menu, .table{
+  display: block;
+}
+header {
+  h1 {
+    text-align: center;
+  }
+  table{
+    vertical-align: top;
+  }
+  .head-picture {
+    margin: 0;
+    .img1 {
+      height: 69px;
+      width: 109px;
+      content: url("../img/header/celine_108_s.jpg");
+      vertical-align: middle;
+      &:after {
+        content: url("../img/header/celine_108_s.jpg");
+        overflow: hidden;
+      }
+      &:before {
+        display: none;
+      }
+    }
+  }
+  .head-table {
+    font-size: 9px;
+    vertical-align: top;
+    td {
+      padding-bottom: 10px;
+    }
+    &:nth-child(odd) {
+      background-color: lighten(blue, 40%);
+    }
+  }
+  .head-picture, table {
+    display: inline-block;
+  }
+}
+
+/*
+*
+*###################### nav menu
+*
+*
+*/
+
+
+.menu{
+  .nav_picture{
+    .img2{
+      &:before{display: none}
+    }
+  }
+  nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    ul {
+      width: 180px;
+      margin: 0 auto;
+      padding: 0;
+      li {
+        display: inline-block;
+        width: 80px;
+        height: 30px;
+        background-color: aqua;
+        text-align: center;
+        padding-top: 10px;
+        a {
+          width: 27px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+/*
+*
+*
+*################################# table
+*
+*
+*/
+.main-table, .main-table2 {
+  width: 300px;
+  margin: 50px auto;
+  tr {
+    &:hover {
+      background-color: #7c36ff;
+    }
+  }
+  th {
+    text-align: left;
+  }
+  th, td {
+    border-bottom: 1px solid gray;
+
+  }
+}
+
+/*
+*
+*################################## tablet format
+*
+*
+*/
+@media (min-width: 768px) {
+  /*
+  *
+  *
+  *#################################### header
+  *
+  */
+  header {
+    .head-table {
+      font-size: 15px;
+      td {
+        padding-bottom: 40px;
+      }
+    }
+    .head-picture {
+      .img1 {
+        height: 200px;
+        width: 316px;
+        content: url("../img/header/celine_108_m.jpg");
+        vertical-align: middle;
+        &:after {
+          content: url("../img/header/celine_108_m.jpg");
+        }
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+  /*
+  *
+  *
+  *################################ table rate
+  *
+  *
+  */
+  .main-table, .main-table2 {
+    width: 600px;
+    margin: 70px auto;
+    font-size: 20px;
+    tr {
+      &:hover {
+        background-color: #7c36ff;
+      }
+    }
+    th {
+      text-align: left;
+    }
+    th, td {
+      border-bottom: 1px solid gray;
+
+    }
+  }
+  /*
+  *
+  *
+  *############################### nav menu
+  *
+  */
+  .menu {
+    nav {
+      ul {
+        li {
+          height: 40px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+/*
+*
+*################################ desktop format medium
+*
+*/
+@media (min-width: 1370px) {
+  /*
+*
+*######################### header
+*
+*/
+  .header {
+    width: 800px;
+    margin: 0 auto;
+    table {
+      padding-left: 40px;
+    }
+  }
+  /*
+  *
+  *############################" menu
+  *
+  *
+  */
+  .menu {
+    padding: 0;
+    margin-top: 54px;
+    height: 500px;
+    width: 300px;
+    .nav_picture {
+      border: 1px dashed grey;
+      border-radius: 3px;
+      height: 300px;
+      padding: 0;
+      margin: 0;
+      .img2 {
+        height: 189px;
+        width: 300px;
+        content: url("../img/piscine_enterree/prix-piscine-creusee_m.jpg");
+        &:after{
+          content: url("../img/piscine_enterree/prix-piscine-creusee_m.jpg");
+        }
+        &:before{
+          display: none;
+        }
+      }
+    }
+    nav {
+      border: 1px dashed grey;
+      border-radius: 3px;
+      height: 300px;
+      background-color: #9E9E9E;
+      width: 300px;
+      ul {
+        width: 200px;
+        margin: 0 auto;
+        li {
+          margin-top: 70px;
+          width: 200px;
+          display: block;
+        }
+      }
+    }
+  }
+  /*
+  *
+  *
+  *##############################" table
+  *
+  */
+  .table{
+    margin-left: 100px;
+  }
+  .menu, .table {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+/*
+*
+*################################## desktop format large
+*
+*
+*/
+@media (min-width: 1600px) {
+  /*
+  *
+  *######################### header
+  *
+  */
+  .header {
+    width: 800px;
+    margin: 0 auto;
+    table {
+      padding-left: 40px;
+      vertical-align: top;
+    }
+  }
+  .menu {
+    width: 477px;
+    margin-top: 54px;
+    margin-left: 100px;
+    .nav_picture {
+      border: 1px dashed grey;
+      border-radius: 3px;
+      height: 300px;
+      padding: 0;
+      margin: 0;
+      .img2 {
+        height: 300px;
+        width: 477px;
+        content: url("../img/piscine_enterree/prix-piscine-creusee_l.jpg");
+        &:after{
+          content: url("../img/piscine_enterree/prix-piscine-creusee_l.jpg");
+        }
+        &:before{
+          display: none;
+        }
+      }
+    }
+    nav{
+      height: 325px;
+      width: 477px;
+      margin-left: 100px;
+      ul{
+        li{
+          width: 200px;
+          display: block;
+        }
+      }
+    }
+  }
+
+}
