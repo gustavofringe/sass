@@ -1,3 +1,4 @@
+//couleur debase
 $color: #868686;
 $color-f: #BBBBBB;
 @font-face {
@@ -36,12 +37,12 @@ header {
         }
       }
     }
-    /*
-    *
-    *####################### navigation
-    *
-    */
     #nav {
+      /*
+      *
+      *####################### navigation
+      *
+      */
       margin-top: 15px;
       display: inline-block;
     }
@@ -122,12 +123,13 @@ header {
         color: #FF5A5F;
       }
     }
-    /*
+
+    #form-top_m {
+      /*
     *
     *######################### form search
     *
     */
-    #form-top_m {
       button {
         vertical-align: middle;
         height: 45px;
@@ -176,13 +178,13 @@ header {
     }
   }
 
-  /*
+  .top {
+    /*
   *
   *
   *################################### image
   *
   */
-  .top {
     .chevron {
       display: none;
     }
@@ -229,12 +231,6 @@ header {
           }
         }
       }
-      /*
-      *
-      *
-      *################################## image top
-      *
-      */
       figure {
         padding: 0;
         margin: 0;
@@ -244,6 +240,12 @@ header {
       }
 
       .figure1 {
+        /*
+        *
+        *
+        *
+        *########################image top
+        */
         width: 130px;
         height: 195px;
         content: url("../img/figure_s/figure.jpg");
@@ -291,6 +293,12 @@ header {
         }
       }
       .figure5 {
+        /*
+        *
+        *################################" image second level
+        *
+        *
+        */
         width: 130px;
         height: 195px;
         content: url("../img/figure_s/figure5_s.jpg");
@@ -301,13 +309,6 @@ header {
           display: none;
         }
       }
-      /*
-      *
-      *
-      *
-      *################################# image second level
-      *
-      */
       .figure6 {
         width: 130px;
         height: 195px;
@@ -363,14 +364,14 @@ header {
           display: none;
         }
       }
-      /*
-      *
-      *
-      *#################################### image third level
-      *
-      *
-      */
       .figure11 {
+        /*
+        *
+        *
+        *#################################### image third level
+        *
+        *
+        */
         width: 293px;
         height: 195px;
         content: url("../img/figure_s/figure11_s.jpg");
@@ -404,6 +405,11 @@ header {
         }
       }
       .figure14 {
+        /*
+        *
+        *##############################" image fifth level
+        *
+        */
         width: 130px;
         height: 195px;
         content: url("../img/figure_s/figure14_s.jpg");
@@ -471,12 +477,12 @@ header {
       }
     }
   }
-  /*
-*
-*################################## div before footer
-*
-*/
   .img2 {
+    /*
+    *
+    *################################## div before footer
+    *
+    */
     padding-bottom: 40px;
     .imageestimer {
       margin: 60px 0 40px 0;
@@ -548,12 +554,12 @@ footer {
       }
     }
   }
-  /*
-  *
-  *######################################## footer logo
-  *
-  */
   .footer-section {
+    /*
+    *
+    *######################################## footer nav
+    *
+    */
     display: none;
   }
   .footer-left {
@@ -566,12 +572,12 @@ footer {
       vertical-align: middle;
     }
   }
-  /*
-  *
-  *################################### bottom footer
-  *
-  */
   .footer-right {
+    /*
+    *
+    *################################### bottom footer
+    *
+    */
     ul {
       width: 100%;
       margin: 0;
@@ -641,6 +647,12 @@ footer {
       .img {
         .figure {
           .figure1 {
+            /*
+            *
+            *#################################### image first level
+            *
+            *
+            */
             width: 168px;
             height: 252px;
             content: url("../img/figure_sm/figure_sm.jpg");
@@ -696,6 +708,12 @@ footer {
             }
           }
           .figure6 {
+            /*
+            *
+            *################################## image second level
+            *
+            *
+            */
             width: 168px;
             height: 252px;
             content: url("../img/figure_sm/figure6_sm.jpg");
@@ -751,6 +769,12 @@ footer {
             }
           }
           .figure11 {
+            /*
+            *
+            *##################################" image house
+            *
+            *
+            */
             width: 353px;
             height: 235px;
             content: url("../img/figure_sm/figure11_sm.jpg");
@@ -784,6 +808,12 @@ footer {
             }
           }
           .figure14 {
+            /*
+            *
+            *################################## image country
+            *
+            *
+            */
             width: 168px;
             height: 252px;
             content: url("../img/figure_sm/figure14_sm.jpg");
@@ -853,6 +883,11 @@ footer {
       }
     }
     .img2 {
+      /*
+      *
+      *##############################" imageestimer
+      *
+      */
       margin-top: 50px;
       display: flex;
       flex-direction: row-reverse;
@@ -867,6 +902,13 @@ footer {
       }
     }
   }
+  /*
+  *
+  *
+  *############################" footer
+  *
+  *
+  */
   footer {
     .opt, .footer-section {
       display: inline-block;
@@ -992,13 +1034,13 @@ footer {
               display: none;
             }
           }
-          /*
-          *
-          *
-          *#####################################" second level of image
-          *
-          */
           .figure6 {
+            /*
+            *
+            *
+            *#####################################" second level of image
+            *
+            */
             width: 233px;
             height: 350px;
             content: url("../img/figure_m/figure6_m.jpg");
@@ -1053,13 +1095,13 @@ footer {
               display: none;
             }
           }
-          /*
-          *
-          *
-          *########################################## third level of image
-          *
-          */
           .figure11 {
+            /*
+            *
+            *
+            *########################################## third level of image
+            *
+            */
             width: 480px;
             height: 320px;
             content: url("../img/figure_m/figure11_m.jpg");
@@ -1092,13 +1134,13 @@ footer {
               display: none;
             }
           }
-          /*
-          *
-          *
-          *###################################### four level of image
-          *
-          */
           .figure14 {
+            /*
+            *
+            *
+            *###################################### four level of image
+            *
+            */
             width: 233px;
             height: 350px;
             content: url("../img/figure_m/figure14_m.jpg");
@@ -1168,14 +1210,13 @@ footer {
       }
     }
   }
-  /*
-  *
-  *
-  *###################################### imageestimer
-  *
-  */
   .img2 {
-
+    /*
+    *
+    *
+    *###################################### imageestimer
+    *
+    */
     display: flex;
     justify-content: space-between !important;
   }
@@ -1297,13 +1338,13 @@ footer {
           top: 5px;
         }
       }
-      /*
-      *
-      *
-      *############################# nav before image
-      *
-      */
       nav {
+        /*
+        *
+        *
+        *############################# nav before image
+        *
+        */
         ul {
           width: 400px !important;
         }
@@ -1389,13 +1430,13 @@ footer {
 
             }
           }
-          /*
-          *
-          *
-          *################################" experience part
-          *
-          */
           .figure6 {
+            /*
+            *
+            *
+            *################################" experience part
+            *
+            */
             width: 203px;
             height: 305px;
             content: url("../img/figure_l/figure6_l.jpg");
@@ -1450,13 +1491,13 @@ footer {
               display: none;
             }
           }
-          /*
-          *
-          *
-          *################################# housing part
-          *
-          */
           .figure11 {
+            /*
+            *
+            *
+            *################################# housing part
+            *
+            */
             width: 345px;
             height: 232px;
             content: url("../img/figure_l/figure11_l.jpg");
@@ -1489,13 +1530,13 @@ footer {
               display: none;
             }
           }
-          /*
-          *
-          *
-          *######################################## country image
-          *
-          */
           .figure14 {
+            /*
+            *
+            *
+            *######################################## country image
+            *
+            */
             width: 167px;
             height: 250px;
             content: url("../img/figure_l/figure14_l.jpg");
