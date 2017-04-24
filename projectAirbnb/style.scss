@@ -13,8 +13,6 @@ html, body {
   color: #767676;
 }
 
-
-
 /*
 *
 *############################### header
@@ -231,6 +229,12 @@ header {
           }
         }
       }
+      /*
+      *
+      *
+      *################################## image top
+      *
+      */
       figure {
         padding: 0;
         margin: 0;
@@ -238,11 +242,7 @@ header {
           font-weight: bold;
         }
       }
-      /*
-      *
-      *################################## image top
-      *
-      */
+
       .figure1 {
         width: 130px;
         height: 195px;
@@ -302,6 +302,8 @@ header {
         }
       }
       /*
+      *
+      *
       *
       *################################# image second level
       *
@@ -365,6 +367,7 @@ header {
       *
       *
       *#################################### image third level
+      *
       *
       */
       .figure11 {
@@ -913,6 +916,11 @@ footer {
 *
 */
 @media (min-width: 1024px) {
+  /*
+  *
+  *####################################### container
+  *
+  */
   .container {
     width: 900px;
     margin: 0 auto;
@@ -920,6 +928,13 @@ footer {
       h2 {
         width: 800px;
       }
+      /*
+      *
+      *
+      *############################## image part
+      *
+      *
+      */
       .img {
         .figure {
           .figure1 {
@@ -977,6 +992,12 @@ footer {
               display: none;
             }
           }
+          /*
+          *
+          *
+          *#####################################" second level of image
+          *
+          */
           .figure6 {
             width: 233px;
             height: 350px;
@@ -1032,6 +1053,12 @@ footer {
               display: none;
             }
           }
+          /*
+          *
+          *
+          *########################################## third level of image
+          *
+          */
           .figure11 {
             width: 480px;
             height: 320px;
@@ -1065,6 +1092,12 @@ footer {
               display: none;
             }
           }
+          /*
+          *
+          *
+          *###################################### four level of image
+          *
+          */
           .figure14 {
             width: 233px;
             height: 350px;
@@ -1135,38 +1168,45 @@ footer {
       }
     }
   }
+  /*
+  *
+  *
+  *###################################### imageestimer
+  *
+  */
   .img2 {
 
     display: flex;
     justify-content: space-between !important;
   }
-  footer{
-    .footer-section{
+  footer {
+    .footer-section {
       width: 800px;
-      section{
+      section {
         margin-left: 60px;
       }
     }
-    .footer-left{
+    .footer-left {
       width: 580px;
     }
   }
 }
+
 /*
 *
 *###################################" desktop
 *
 */
 @media (min-width: 1200px) {
-  header{
-    /*
-    *
-    *
-    *########################################## nav header
-    *
-    */
-    .logo-header{
-      .img-header{
+  /*
+   *
+   *
+   *########################################## nav header
+   *
+   */
+  header {
+    .logo-header {
+      .img-header {
         width: 40px !important;
         height: 40px !important;
         content: url("../img/media.svg");
@@ -1174,24 +1214,30 @@ footer {
     }
     position: relative;
     height: 100px;
-    .chevron_s{
+    .chevron_s {
       display: none;
     }
-    #nav{
+    /*
+    *
+    *
+    *############################################" nav bar header
+    *
+    **/
+    #nav {
       position: absolute;
       top: 0;
       right: 400px;
     }
-    #nav ul li ul{
+    #nav ul li ul {
       display: inline-block !important;
       width: 1000px;
       vertical-align: top;
-      li{
+      li {
         width: 100px !important;
         margin: 0;
         padding: 0;
         display: inline-block !important;
-        a{
+        a {
           margin: 0;
           padding: 0;
           width: 100px;
@@ -1201,35 +1247,45 @@ footer {
       }
     }
   }
-  .head{
+  .head {
     border-bottom: 1px solid $color;
-    h1{
+    h1 {
       width: 640px;
     }
   }
-  .container{
+  .container {
     width: 1080px;
     margin: 0 auto;
-    .head{
+    .head {
       /*
       *
       *####################################### form search destination
       *
       */
-      #form-top{
+      #form-top {
         width: 1080px;
         height: 60px;
-        input{
-          display: inline-block;
-          padding-top: 20px;
-          width: 300px;
+        display: flex;
+        label {
+          display: block !important;
         }
-        label{
-          display: inline-block !important;
+        .where, .when, .travel {
+          display: block;
+          width: 400px;
+          border-right: 0.5px solid $color-f;
+          padding: 10px 0 0 10px;
+          #where, #when, #travel {
+            padding: 5px 0 0 0;
+          }
+          input {
+            padding: 0;
+            width: 135px;
+            font-size: 16px;
+          }
         }
-        button{
+        button {
           visibility: visible;
-          border: 1px solid $color-f ;
+          border: 1px solid $color-f;
           border-style: none;
           height: 50px;
           width: 120px;
@@ -1237,8 +1293,8 @@ footer {
           color: #f6f6f6;
           border-radius: 3px;
           position: absolute;
-          right:10px;
-          top:5px;
+          right: 10px;
+          top: 5px;
         }
       }
       /*
@@ -1247,26 +1303,26 @@ footer {
       *############################# nav before image
       *
       */
-      nav{
-        ul{
-          width: 500px !important;
+      nav {
+        ul {
+          width: 400px !important;
         }
       }
     }
-    .top{
-      h2{
+    .top {
+      h2 {
         width: 950px;
       }
-      .img{
+      .img {
         overflow: hidden;
       }
-      .chevron{
+      .chevron {
         width: 20px;
         height: 20px;
         content: url("../img/chevron.svg");
         display: flex !important;
         transform: rotate(270deg);
-        margin-top:140px;
+        margin-top: 140px;
       }
       .img {
         .figure {
@@ -1330,6 +1386,7 @@ footer {
             }
             &:before {
               display: none;
+
             }
           }
           /*
@@ -1512,15 +1569,15 @@ footer {
     *############################### image before footer
     *
     */
-    .img2{
-      .imageestimer{
+    .img2 {
+      .imageestimer {
         width: 539px;
         height: 283px;
         content: url("../img/figure_l/imageestimer_l.jpg");
-        &:after{
+        &:after {
           content: url("../img/figure_l/imageestimer_l.jpg");
         }
-        &:before{
+        &:before {
           display: none;
         }
       }
@@ -1532,27 +1589,33 @@ footer {
   *############################# footer for desktop
   *
   **/
-  footer{
+  footer {
     width: 1080px;
     margin: 0 auto;
-    .footer-section{
+    .footer-section {
       margin-left: 100px;
-      section{
+      section {
         margin-left: 100px;
-        ul{
-          li{
-            a{
+        ul {
+          li {
+            a {
               line-height: 25px;
             }
           }
         }
       }
     }
-    .footer-left{
+    /*
+    *
+    *################################### footer bottom
+    *
+    *
+    */
+    .footer-left {
       width: 670px;
     }
-    .footer-right{
-      border-top: .5px solid $color-f ;
+    .footer-right {
+      border-top: .5px solid $color-f;
       padding-top: 21px;
     }
   }
