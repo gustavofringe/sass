@@ -620,6 +620,7 @@ footer {
       visibility: hidden;
     }
     #form-top {
+      display: flex !important;
       visibility: visible !important;
       width: 700px;
       height: 40px;
@@ -630,10 +631,16 @@ footer {
       label {
         display: none;
       }
+      .when, .where, .travel{
+        width: 250px;
+      }
+      .where, .when{
+        border-right: 0.5px solid $color-f;
+      }
       input {
         border-style: none;
         margin: 0;
-        width: 30%;
+        width: 80%;
         padding: 10px 0 0 10px;
       }
       button {
