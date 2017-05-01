@@ -1,0 +1,133 @@
+/*=========================================================
+tablet format
+==========================================================*/
+@media (min-width: 768px) {
+  .wall{
+  background: url(../img/wall.jpg) no-repeat top fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: right top;
+}
+  #catalog, #contact, #blog{
+    background-color: white;
+    width: 75%;
+  }
+  /*=========================================================
+  catalog page
+  ==========================================================*/
+  #catalog {
+  width: 75%;
+    margin: 0 auto;
+    .block{
+      .floor{
+        section:nth-child(3){
+          display: flex;
+        }
+      }
+    }
+  }
+}
+/*==============================================================
+contact page
+=================================================================*/
+#contact{
+  main{
+    address{
+      width: 400px;
+      margin: 0 auto;
+    }
+    #map{
+      width: 350px;
+      margin: 0 auto;
+    }
+  }
+}
+/*===================================================================
+blog page
+=====================================================================*/
+#blog, #contact, #catalog {
+  width: 80% ;
+  margin: 0 auto;
+}
+#blog{
+  .blog{
+    margin-top: 100px;
+    .left, .right{
+      height: 200px;
+      .text{
+        p{
+          span{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px){
+  /*==============================================================
+contact page
+=================================================================*/
+  #contact{
+    width: 75%;
+    margin: 0 auto;
+    main{
+      display: flex;
+      form{
+        margin-top: 150px;
+        width: 300px;
+      }
+      #map{
+        margin-top: 70px;
+        width: 400px;
+      }
+      address{
+        width: 300px;
+        font-size: 14px;
+      }
+      #address{
+        padding-top: 100px;
+        height: 600px;
+        display: block !important;
+      }
+    }
+  }
+/*#home{
+  .logo-home{
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    #logo{
+      width: 300px;
+      height: 300px;
+    }
+  }
+}*/
+  /*====================================================================
+  catalog page
+  ========================================================================*/
+  #catalog{
+    width: 70%;
+    margin: 0 auto;
+    main{
+      .block{
+        .floor{
+          height: 180px;
+          .medium{
+            width: 280px;
+          }
+          .large{
+            width: 280px;
+          }
+          section{
+            img{
+              height: 125px;
+              background: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+}

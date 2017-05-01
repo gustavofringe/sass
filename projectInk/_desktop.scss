@@ -1,0 +1,154 @@
+/*============================================================
+desktop format
+==============================================================*/
+@media (min-width: 1280px) {
+  .wall{
+    background: url(../img/wall.jpg) no-repeat top fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: right top;
+  }
+  #home {
+/*
+*logo society
+*resize and position of logo
+*/
+    .logo-home {
+      position: absolute;
+      top: 0;
+      left: 600px;
+      #logo {
+        width: 500px;
+        height: 500px;
+      }
+    }
+    header {
+      #nav {
+        ul{
+          #header__icon{
+            display: none;
+          }
+          .header__icon {
+            .dropdown {
+              width: 400px;
+              display: inline-block;
+              background: transparent;
+              li{
+                display: inline-block;
+                margin-left: 20px;
+                a{
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #catalog, #blog, #contact{
+    width: 70%;
+    height: 100%;
+    margin: -17px auto;
+    background-color: white;
+    background-size: cover;
+
+    header {
+      .logo-home {
+        #logo {
+          position: fixed;
+          top: 20px;
+          left: 300px;
+          width: 100px;
+          height: 100px;
+        }
+      }
+      h1 {
+        text-align: center;
+        font-size: 20px;
+      }
+      #nav {
+        ul{
+          #header__icon{
+            display: none;
+          }
+          .header__icon {
+            .dropdown {
+              right: 200px;
+              width: 300px;
+              display: inline-block;
+              background: transparent;
+              li{
+                display: inline-block;
+                margin-left: 20px;
+                a{
+                  color: black;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /*==============================================================
+  blog page
+  =================================================================*/
+  #blog{
+    main {
+      .blog{
+        .left, .right{
+          .text{
+            p{
+              span{
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #contact{
+    main{
+      form{
+        width: 450px;
+        margin-left: 25px;
+        .field{
+          margin-top: 50px;
+        }
+      }
+      #address{
+        address{
+          width: 500px;
+        }
+        margin-top: 50px;
+        height: 800px;
+        #map{
+          width: 500px;
+          height: 600px;
+        }
+      }
+    }
+  }
+  /*================================================================
+  catalog page
+  ===================================================================*/
+  #catalog{
+    main{
+      margin-top: 80px;
+      .block{
+        .floor{
+          section:nth-child(4){
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+  footer{
+    .link{
+      margin: 0;
+    }
+  }
+}
