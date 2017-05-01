@@ -2,13 +2,68 @@
 tablet format
 ==========================================================*/
 @media (min-width: 768px) {
-  .wall{
-  background: url(../img/wall.jpg) no-repeat top fixed;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: right top;
-}
-  #catalog, #contact, #blog{
+  .wall {
+    background: url(../img/wall.jpg) no-repeat top fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: right top;
+  }
+  #home {
+    header {
+      #nav {
+        .header__icon {
+          #header__icon {
+            position: fixed;
+            left: 700px;
+            top:25px;
+          }
+        }
+        .dropdown{
+          position: fixed;
+          top: 55px;
+          right: 28px;
+        }
+      }
+      .logo-home{
+        position: fixed;
+        top: 100px;
+        left: 750px;
+        #logo{
+          width: 300px;
+          height: 300px;
+        }
+      }
+    }
+  }
+
+  #catalog, #contact, #blog {
+    width: 80%;
+    margin: 0 auto;
+    header {
+      #nav {
+        ul {
+          .header__icon {
+            #header__icon {
+              position: fixed;
+              left: 600px;
+              top: 25px;
+            }
+          }
+          .dropdown{
+            position: fixed;
+            right: 150px;
+            top: 60px;
+          }
+        }
+      }
+      .logo-home {
+        #logo {
+          position: fixed;
+          left: 150px;
+          top: 10px;
+        }
+      }
+    }
     background-color: white;
     width: 75%;
   }
@@ -16,112 +71,156 @@ tablet format
   catalog page
   ==========================================================*/
   #catalog {
-  width: 75%;
+    width: 75%;
     margin: 0 auto;
-    .block{
-      .floor{
-        section:nth-child(3){
+    .block {
+      .floor {
+        section:nth-child(3) {
           display: flex;
         }
       }
     }
   }
 }
+
 /*==============================================================
 contact page
 =================================================================*/
-#contact{
-  main{
-    address{
+#contact {
+  main {
+    address {
       width: 400px;
       margin: 0 auto;
     }
-    #map{
+    #map {
       width: 350px;
       margin: 0 auto;
     }
   }
 }
+
 /*===================================================================
 blog page
 =====================================================================*/
-#blog, #contact, #catalog {
-  width: 80% ;
-  margin: 0 auto;
-}
-#blog{
-  .blog{
+
+#blog {
+  .blog {
     margin-top: 100px;
-    .left, .right{
-      height: 200px;
-      .text{
-        p{
-          span{
-            display: block;
+    .left, .right {
+      .text {
+        p {
+          span {
+            /*display: block;*/
           }
         }
       }
     }
   }
 }
+/*=======================================================================
+tablet
+=========================================================================*/
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
+  #home {
+    header {
+      #nav {
+        ul{
+          .header__icon {
+            #header__icon {
+              position: fixed;
+              left: 893px;
+            }
+          }
+        }
+      }
+      .logo-home{
+        position: fixed;
+        left: 200px;
+        #logo{
+          width: 300px;
+          height: 300px;
+        }
+      }
+    }
+  }
+  #catalog, #contact, #blog {
+    width: 80%;
+    margin: 0 auto;
+    header {
+      #nav {
+        ul {
+          .header__icon {
+            #header__icon {
+              position: fixed;
+              left: 830px;
+              top: 25px;
+            }
+          }
+          .dropdown{
+            position: fixed;
+            right: 150px;
+            top: 60px;
+          }
+        }
+      }
+      .logo-home {
+        #logo {
+          position: fixed;
+          left: 150px;
+          top: 10px;
+        }
+      }
+    }
+    background-color: white;
+    width: 75%;
+  }
   /*==============================================================
 contact page
 =================================================================*/
-  #contact{
+  #contact {
     width: 75%;
     margin: 0 auto;
-    main{
+    main {
       display: flex;
-      form{
+      form {
         margin-top: 150px;
         width: 300px;
       }
-      #map{
+      #map {
         margin-top: 70px;
         width: 400px;
       }
-      address{
+      address {
         width: 300px;
         font-size: 14px;
       }
-      #address{
+      #address {
         padding-top: 100px;
         height: 600px;
         display: block !important;
       }
     }
   }
-/*#home{
-  .logo-home{
-    position: absolute;
-    top: 80px;
-    left: 80px;
-    #logo{
-      width: 300px;
-      height: 300px;
-    }
-  }
-}*/
+
   /*====================================================================
   catalog page
   ========================================================================*/
-  #catalog{
+  #catalog {
     width: 70%;
     margin: 0 auto;
-    main{
-      .block{
-        .floor{
+    main {
+      .block {
+        .floor {
           height: 180px;
-          .medium{
+          .medium {
             width: 280px;
           }
-          .large{
+          .large {
             width: 280px;
           }
-          section{
-            img{
+          section {
+            img {
               height: 125px;
               background: cover;
             }

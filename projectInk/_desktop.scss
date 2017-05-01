@@ -2,17 +2,17 @@
 desktop format
 ==============================================================*/
 @media (min-width: 1280px) {
-  .wall{
+  .wall {
     background: url(../img/wall.jpg) no-repeat top fixed;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: right top;
   }
   #home {
-/*
-*logo society
-*resize and position of logo
-*/
+    /*
+    *logo society
+    *resize and position of logo
+    */
     .logo-home {
       position: absolute;
       top: 0;
@@ -24,8 +24,8 @@ desktop format
     }
     header {
       #nav {
-        ul{
-          #header__icon{
+        ul {
+          #header__icon {
             display: none;
           }
           .header__icon {
@@ -33,10 +33,10 @@ desktop format
               width: 400px;
               display: inline-block;
               background: transparent;
-              li{
+              li {
                 display: inline-block;
                 margin-left: 20px;
-                a{
+                a {
                   color: white;
                 }
               }
@@ -46,7 +46,7 @@ desktop format
       }
     }
   }
-  #catalog, #blog, #contact{
+  #catalog, #blog, #contact {
     width: 70%;
     height: 100%;
     margin: -17px auto;
@@ -54,6 +54,12 @@ desktop format
     background-size: cover;
 
     header {
+
+        h1{
+          padding-top: 50px;
+          font-size: 35px;
+        }
+
       .logo-home {
         #logo {
           position: fixed;
@@ -63,13 +69,9 @@ desktop format
           height: 100px;
         }
       }
-      h1 {
-        text-align: center;
-        font-size: 20px;
-      }
       #nav {
-        ul{
-          #header__icon{
+        ul {
+          #header__icon {
             display: none;
           }
           .header__icon {
@@ -78,10 +80,10 @@ desktop format
               width: 300px;
               display: inline-block;
               background: transparent;
-              li{
+              li {
                 display: inline-block;
                 margin-left: 20px;
-                a{
+                a {
                   color: black;
                 }
               }
@@ -91,40 +93,45 @@ desktop format
       }
     }
   }
-  /*==============================================================
+/*  !*==============================================================
   blog page
-  =================================================================*/
-  #blog{
+  =================================================================*!
+  #blog {
     main {
-      .blog{
-        .left, .right{
-          .text{
-            p{
-              span{
+      .blog {
+        .left, .right {
+          .text {
+            p {
+              !*span {
                 display: block;
-              }
+              }*!
             }
           }
         }
       }
     }
-  }
-  #contact{
-    main{
-      form{
+  }*/
+  /*=====================================================================
+  contact page
+  ========================================================================*/
+  #contact {
+
+    main {
+
+      form {
         width: 450px;
         margin-left: 25px;
-        .field{
+        .field {
           margin-top: 50px;
         }
       }
-      #address{
-        address{
+      #address {
+        address {
           width: 500px;
         }
         margin-top: 50px;
         height: 800px;
-        #map{
+        #map {
           width: 500px;
           height: 600px;
         }
@@ -134,20 +141,20 @@ desktop format
   /*================================================================
   catalog page
   ===================================================================*/
-  #catalog{
-    main{
+  #catalog {
+    main {
       margin-top: 80px;
-      .block{
-        .floor{
-          section:nth-child(4){
+      .block {
+        .floor {
+          section:nth-child(4) {
             display: flex;
           }
         }
       }
     }
   }
-  footer{
-    .link{
+  footer {
+    .link {
       margin: 0;
     }
   }
