@@ -9,20 +9,21 @@ desktop format
     background-position: right top;
   }
   #home {
-    /*
-    *logo society
-    *resize and position of logo
-    */
-    .logo-home {
-      position: absolute;
-      top: 0;
-      left: 600px;
-      #logo {
-        width: 500px;
-        height: 500px;
-      }
-    }
+
     header {
+      /*
+*logo society
+*resize and position of logo
+*/
+      .logo-home {
+        position: fixed;
+        top: 0;
+        left: 600px;
+        #logo {
+          width: 500px;
+          height: 500px;
+        }
+      }
       #nav {
         ul {
           #header__icon {
@@ -46,6 +47,9 @@ desktop format
       }
     }
   }
+  /*=========================================================================
+  default setting for catalog, blog & contact
+  ==========================================================================*/
   #catalog, #blog, #contact {
     width: 70%;
     height: 100%;
@@ -54,16 +58,26 @@ desktop format
     background-size: cover;
 
     header {
-
-        h1{
-          padding-top: 50px;
-          font-size: 35px;
-        }
+      height: 100px;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      background: url("../img/menu.png") no-repeat ;
+      -webkit-background-size: 100% 100% ;
+      background-size: 100% 100% ;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      h1 {
+        font-size: 35px;
+      }
 
       .logo-home {
         #logo {
           position: fixed;
-          top: 20px;
+          top: 15px;
           left: 300px;
           width: 100px;
           height: 100px;
@@ -84,7 +98,7 @@ desktop format
                 display: inline-block;
                 margin-left: 20px;
                 a {
-                  color: black;
+                  color: white;
                 }
               }
             }
@@ -93,24 +107,31 @@ desktop format
       }
     }
   }
-/*  !*==============================================================
-  blog page
-  =================================================================*!
-  #blog {
-    main {
-      .blog {
-        .left, .right {
-          .text {
-            p {
-              !*span {
-                display: block;
-              }*!
+    /*==============================================================
+    blog page
+    =================================================================*/
+    #blog {
+      main {
+        .blog {
+          padding-top:80px;
+          .left, .right {
+            figure{
+              img{
+                margin: 10px;
+              }
+            }
+            .text {
+              margin-top: 10px;
+              p {
+                span {
+                  display: block;
+                }
+              }
             }
           }
         }
       }
     }
-  }*/
   /*=====================================================================
   contact page
   ========================================================================*/
@@ -143,8 +164,9 @@ desktop format
   ===================================================================*/
   #catalog {
     main {
-      margin-top: 80px;
+      margin-top: 100px;
       .block {
+        padding-top: 50px;
         .floor {
           section:nth-child(4) {
             display: flex;

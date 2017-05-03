@@ -1274,23 +1274,29 @@ footer {
     #nav {
       position: absolute;
       top: 0;
-      right: 400px;
+      right: 450px;
     }
     #nav ul li ul {
       display: inline-block !important;
-      width: 1000px;
       vertical-align: top;
+      width: 800px;
       li {
-        width: 100px !important;
+        width: 120px !important;
         margin: 0;
         padding: 0;
         display: inline-block !important;
+        text-align: center;
+        :hover{
+          background: white;
+        }
         a {
+          background: white;
           margin: 0;
           padding: 0;
           width: 100px;
           color: $color !important;
           font-size: 14px !important;
+
         }
       }
     }
