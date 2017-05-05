@@ -1,0 +1,210 @@
+/*==================================================================
+start project
+
+=====================================================================*/
+html {
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*==================================================================
+header for all page
+
+======================================================================*/
+
+header {
+
+  padding: 0;
+  margin: 0;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  h1 {
+    background-color: #262626;
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    padding: 0;
+    margin: 100px 0 0 0;
+  }
+  .header_fixed {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+
+    figure {
+      padding-left: 0;
+      margin-left: 0;
+      a {
+        img {
+          width: 150px;
+        }
+      }
+    }
+    #nav {
+      /*
+      *menu hamburger
+      *top right position
+      *
+      */
+
+      .menu {
+        .sub {
+          display: none;
+          li {
+            list-style-type: none;
+            .dropdown {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+              align-items: center;
+              /*
+              *position of dropdown
+              *menu dropdown
+              **/
+              margin: 0;
+              padding: 0;
+              width: 120px;
+              height: 120px;
+              border-radius: 3px;
+              background-color: aliceblue;
+              z-index: 100;
+              li {
+                list-style-type: none;
+                a {
+                  text-decoration: none;
+                  color: #222222;
+                }
+              }
+            }
+          }
+        }
+        .header__icon {
+          list-style-type: none;
+          #header__icon {
+            display: block;
+            border-radius: 3px;
+            width: 40px;
+            height: 30px;
+            cursor: pointer;
+
+            &:after {
+              content: '';
+              margin: 0 auto;
+              padding: 0;
+              display: block;
+              width: 1.2rem;
+              height: 0;
+              -webkit-box-shadow: 0 10px 0 1px #000000, 0 16px 0 1px #000000, 0 22px 0 1px #000000;
+              -moz-box-shadow: 0 10px 0 1px #000000, 0 16px 0 1px #000000, 0 22px 0 1px #000000;
+              box-shadow: 0 10px 0 1px #000000, 0 16px 0 1px #000000, 0 22px 0 1px #000000;
+            }
+          }
+
+        }
+        .header__icon:hover > ul {
+          /*
+          *dropdown visible
+          */
+          position: absolute;
+          top: 50px;
+          right: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          z-index: 50;
+        }
+      }
+    }
+  }
+}
+
+/*===========================================================================
+service part
+============================================================================*/
+#service {
+  margin: 0;
+  padding: 0;
+  background-color: #F2F1F1;
+  h2 {
+    padding: 20px 0 0 0;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid #F2F1F1;
+  }
+  h3 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .card {
+    background-color: #FFFF;
+    margin: 0 auto;
+    width: 250px;
+    height: 400px;
+    box-shadow: 3px 3px 5px 0px #9b9b9b;
+    h4 {
+      text-transform: uppercase;
+      font-weight: 400;
+      text-align: center;
+      span {
+        color: #95ECFD;
+        display: block;
+      }
+    }
+    img {
+      margin: 0 auto;
+      width: 90px;
+      display: block;
+    }
+    p {
+      font-size: 13px;
+      color: #BCBCBC;
+      width: 200px;
+      margin: 0 auto;
+      text-align: justify;
+      padding-top: 20px;
+    }
+  }
+}
+
+/*==================================================================================================
+contact part
+=====================================================================================================*/
+#contact {
+  background-color: white;
+  h2{
+    width: 250px;
+    margin: 0 auto;
+    font-size: 50px;
+    font-weight: 300;
+  }
+  #map {
+    z-index: -10;
+    width: 100%;
+    height: 160px;
+  }
+}
