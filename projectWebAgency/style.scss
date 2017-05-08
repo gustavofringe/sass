@@ -363,11 +363,12 @@ tablet portrait format
       height: 100px;
       #nav {
         .menu {
+          position: relative;
           .header__icon {
             &:hover > ul {
-              position: fixed;
-              top: 16px;
-              right: 50px;
+              position: absolute;
+              top: 0;
+              right: 0;
             }
             #header__icon {
               display: none;
@@ -456,11 +457,12 @@ desktop format
             &:hover > ul {
               position: fixed;
               top: 16px;
-              right: 75px;
+              right: 95px;
             }
             #header__icon {
               display: none;
             }
+
             .sub {
               display: block;
               .dropdown {
