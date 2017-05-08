@@ -43,19 +43,21 @@ header {
     margin: 100px 0 0 0;
   }
   .header_fixed {
-    width: 100%;
+    width: 90%;
     background-color: white;
+    border-bottom:1px solid black;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     position: fixed;
     top: 0;
+    z-index: 2;
 
     figure {
       padding-left: 0;
       margin-left: 0;
       a {
         img {
-          width: 150px;
+          width: 175px;
         }
       }
     }
@@ -125,13 +127,12 @@ header {
           *dropdown visible
           */
           position: absolute;
-          top: 50px;
+          top: 45px;
           right: 20px;
           display: flex;
           flex-direction: column;
           justify-content: space-around;
           align-items: center;
-          z-index: 50;
         }
       }
     }
@@ -145,6 +146,7 @@ service part
   margin: 0;
   padding: 0;
   background-color: #F2F1F1;
+
   h2 {
     padding: 20px 0 0 0;
     margin: 0;
@@ -152,42 +154,44 @@ service part
     font-weight: 300;
     text-transform: uppercase;
     text-align: center;
-    border-bottom: 1px solid #F2F1F1;
+    border-bottom: 1px solid #CECDCD /*#000000*/;
   }
-  h3 {
-    font-size: 30px;
-    text-align: center;
-    font-weight: 400;
+}
+
+h3 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.card {
+  background-color: #FFFF;
+  margin: 0 auto;
+  width: 250px;
+  height: 400px;
+  box-shadow: 3px 3px 5px 0px #9b9b9b;
+  h4 {
     text-transform: uppercase;
-  }
-  .card {
-    background-color: #FFFF;
-    margin: 0 auto;
-    width: 250px;
-    height: 400px;
-    box-shadow: 3px 3px 5px 0px #9b9b9b;
-    h4 {
-      text-transform: uppercase;
-      font-weight: 400;
-      text-align: center;
-      span {
-        color: #95ECFD;
-        display: block;
-      }
-    }
-    img {
-      margin: 0 auto;
-      width: 90px;
+    font-weight: 400;
+    text-align: center;
+    span {
+      color: #95ECFD;
       display: block;
     }
-    p {
-      font-size: 13px;
-      color: #BCBCBC;
-      width: 200px;
-      margin: 0 auto;
-      text-align: justify;
-      padding-top: 20px;
-    }
+  }
+  img {
+    margin: 0 auto;
+    width: 90px;
+    display: block;
+  }
+  p {
+    font-size: 13px;
+    color: #BCBCBC;
+    width: 200px;
+    margin: 0 auto;
+    text-align: justify;
+    padding-top: 20px;
   }
 }
 
@@ -196,15 +200,309 @@ contact part
 =====================================================================================================*/
 #contact {
   background-color: white;
-  h2{
+  h2 {
+    font-family: 'Quicksand', sans-serif;
     width: 250px;
     margin: 0 auto;
-    font-size: 50px;
+    padding-top: 50px;
+    font-size: 40px;
     font-weight: 300;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-family: 'Quicksand', sans-serif;
+    width: 270px;
+    font-weight: 300;
+    color: #666666;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-align: center;
+  }
+  form {
+    width: 80%;
+    margin: 0 auto;
+    input {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+      height: 30px;
+      border: 0.2px solid #D9D9D9;
+      border-radius: 1px;
+    }
+    input[type="submit"] {
+      border-style: none;
+      border-radius: 3px;
+      background-color: #000;
+      transition-duration: 0.5s;
+      transform: scale(1);
+      color: white;
+      &:hover {
+        background-color: #39A9DC;
+        transition-duration: 0.5s;
+        transform: scale(1.1);
+      }
+    }
+    textarea {
+      width: 100%;
+      height: 60px;
+      text-align: center;
+    }
   }
   #map {
-    z-index: -10;
+    /*
+    *map
+    */
     width: 100%;
     height: 160px;
+  }
+}
+
+/*======================================================================================
+tablet landscape format
+==========================================================================================*/
+@media (min-width: 768px) {
+
+  header {
+    .header_fixed {
+      justify-content: space-between;
+      figure {
+        img {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+  /*================================================================================
+  service page
+  ==================================================================================*/
+  #service {
+    padding-bottom: 50px;
+    h2 {
+      font-size: 40px;
+      border-bottom: 0.2px solid #CECDCD;
+    }
+    figure {
+      img {
+        width: 700px;
+        content: url("../img/creation-site-internet.jpg");
+      }
+    }
+    .card_top, .card_bottom {
+      display: flex;
+      .card {
+        width: 125px;
+        p {
+          width: 110px;
+        }
+      }
+    }
+    .card_top {
+      padding-bottom: 20px;
+      .card {
+        &:nth-child(1) {
+          height: 430px;
+        }
+        &:nth-child(2) {
+          height: 500px;
+        }
+        &:nth-child(4) {
+          height: 450px;
+        }
+      }
+    }
+    .card_bottom {
+      .card {
+        &:nth-child(1) {
+          height: 510px;
+        }
+        &:nth-child(2) {
+          height: 430px;
+        }
+        &:nth-child(3) {
+          height: 455px;
+        }
+        &:nth-child(4) {
+          height: 430px;
+        }
+      }
+    }
+  }
+  /*=======================================================
+  contact page
+  ===========================================================*/
+  #contact {
+    #map {
+      height: 450px;
+    }
+    h2 {
+      width: 400px;
+    }
+    h3 {
+      width: 400px;
+      padding-bottom: 50px;
+    }
+    form {
+      textarea {
+        height: 300px;
+      }
+    }
+  }
+}
+
+/*========================================================================
+tablet portrait format
+============================================================================*/
+@media (min-width: 1024px) {
+  header {
+    .header_fixed {
+      height: 100px;
+      #nav {
+        .menu {
+          .header__icon {
+            &:hover > ul {
+              position: fixed;
+              top: 16px;
+              right: 50px;
+            }
+            #header__icon {
+              display: none;
+            }
+            .sub {
+              display: block;
+              .dropdown {
+                height: 50px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: flex-start;
+                width: 400px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /*===========================================================================
+  service page
+  =============================================================================*/
+  #service {
+    figure {
+      width: 700px;
+      margin: 0 auto;
+      img {/*
+        width: 700px;*/
+        content: url("../img/creation-site-internet.jpg");
+      }
+    }
+    .card_top, .card_bottom {
+      display: flex;
+      .card {
+        width: 225px;
+        p {
+          width: 200px;
+        }
+      }
+    }
+    .card_top {
+      .card {
+        &:nth-child(1) {
+          height: 370px;
+        }
+        &:nth-child(2) {
+          height: 380px;
+        }
+        &:nth-child(3) {
+          height: 330px;
+        }
+        &:nth-child(4) {
+          height: 370px;
+        }
+      }
+    }
+    .card_bottom {
+      .card {
+        &:nth-child(1) {
+          height: 380px;
+        }
+        &:nth-child(2) {
+          height: 350px;
+        }
+        &:nth-child(3) {
+          height: 360px;
+        }
+        &:nth-child(4) {
+          height: 365px;
+        }
+      }
+    }
+  }
+}
+/*====================================================================
+desktop format
+========================================================================*/
+@media (min-width: 1450px) {
+  header {
+    .header_fixed {
+      height: 100px;
+      #nav {
+        .menu {
+          .header__icon {
+            &:hover > ul {
+              position: fixed;
+              top: 16px;
+              right: 75px;
+            }
+            #header__icon {
+              display: none;
+            }
+            .sub {
+              display: block;
+              .dropdown {
+                height: 50px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: flex-start;
+                width: 400px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #service{
+    figure {
+      /*
+      *resize image center
+      */
+      width: 1000px;
+      margin: 0 auto;
+      img {
+        width: 1000px;
+        content: url("../img/creation-site-internet.jpg");
+      }
+    }
+    .card_top, .card_bottom {
+      /*
+      *resize card
+      */
+      width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      .card {
+        width: 250px;
+        height: 400px !important;
+        p {
+          width: 200px;
+        }
+      }
+    }
   }
 }
